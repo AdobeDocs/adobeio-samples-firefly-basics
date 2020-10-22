@@ -1,0 +1,76 @@
+packages:
+  __APP_PACKAGE__:
+    license: Apache-2.0
+    actions:
+      uploadfile:
+        function: actions/files/upload/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          require-adobe-auth: false
+          final: true
+      listfiles:
+        function: actions/files/list/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          require-adobe-auth: false
+          final: true
+      downloadfile-redirect:
+        function: actions/files/redirect/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          require-adobe-auth: false
+          final: true
+      downloadfile-presigned:
+        function: actions/files/presign-url/download.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          require-adobe-auth: false
+          final: true
+      state-write:
+        function: actions/state/write/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          require-adobe-auth: false
+          final: true
+      state-read:
+        function: actions/state/read/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          require-adobe-auth: false
+          final: true
+      gateway-cache:
+        function: actions/gateway-cache/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          require-adobe-auth: false
+          final: true
+      event-handler:
+        function: actions/event-handler/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          require-adobe-auth: false
+          final: true
