@@ -74,3 +74,12 @@ packages:
         annotations:
           require-adobe-auth: false
           final: true
+      analytics14:
+        function: actions/analytics14/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          require-adobe-auth: true
+          final: true
