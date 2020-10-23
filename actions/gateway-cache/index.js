@@ -1,8 +1,18 @@
 /*
-* Demontrating how to cache response of an action at Gateway level
-*/
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
 
 /**
+ * Demontrating how to cache response of an action at Gateway level
+ *
  * to test this functionality, make sure that the Cache-Control header in your HTTP request is not set to "no-cache"
  * (which is by default if you use Postman or browser's developer tools)
  * More info: https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/throughput_tuning.md#caching-responses
