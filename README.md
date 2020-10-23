@@ -5,6 +5,7 @@ These code snippets will help you to quickly start developing your Firefly apps.
 - Firefly Files SDK
 - Firefly State SDK
 - I/O Events handler
+- Get real-time data from Adobe Analytics API 1.4
 
 ## Setup
 
