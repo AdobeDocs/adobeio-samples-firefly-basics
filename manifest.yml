@@ -5,7 +5,7 @@ packages:
       uploadfile:
         function: actions/files/upload/index.js
         web: 'yes'
-        runtime: 'nodejs:12'
+        runtime: 'nodejs:14'
         inputs:
           LOG_LEVEL: debug
         annotations:
@@ -14,7 +14,7 @@ packages:
       listfiles:
         function: actions/files/list/index.js
         web: 'yes'
-        runtime: 'nodejs:12'
+        runtime: 'nodejs:14'
         inputs:
           LOG_LEVEL: debug
         annotations:
@@ -23,7 +23,7 @@ packages:
       downloadfile-redirect:
         function: actions/files/redirect/index.js
         web: 'yes'
-        runtime: 'nodejs:12'
+        runtime: 'nodejs:14'
         inputs:
           LOG_LEVEL: debug
         annotations:
@@ -41,7 +41,7 @@ packages:
       state-write:
         function: actions/state/write/index.js
         web: 'yes'
-        runtime: 'nodejs:12'
+        runtime: 'nodejs:14'
         inputs:
           LOG_LEVEL: debug
         annotations:
@@ -50,7 +50,7 @@ packages:
       state-read:
         function: actions/state/read/index.js
         web: 'yes'
-        runtime: 'nodejs:12'
+        runtime: 'nodejs:14'
         inputs:
           LOG_LEVEL: debug
         annotations:
@@ -59,7 +59,7 @@ packages:
       gateway-cache:
         function: actions/gateway-cache/index.js
         web: 'yes'
-        runtime: 'nodejs:12'
+        runtime: 'nodejs:14'
         inputs:
           LOG_LEVEL: debug
         annotations:
@@ -68,7 +68,7 @@ packages:
       event-handler:
         function: actions/event-handler/index.js
         web: 'yes'
-        runtime: 'nodejs:12'
+        runtime: 'nodejs:14'
         inputs:
           LOG_LEVEL: debug
         annotations:
@@ -77,7 +77,7 @@ packages:
       analytics14:
         function: actions/analytics14/index.js
         web: 'yes'
-        runtime: 'nodejs:12'
+        runtime: 'nodejs:14'
         inputs:
           LOG_LEVEL: debug
         annotations:
